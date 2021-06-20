@@ -64,11 +64,11 @@ body {
     font-family: "Microsoft JhengHei", serif;
 }
 
-/**{outline:black 1px solid;}*/
-
+/**{outline:rgb(252, 0, 0) 1px solid;}*/
 html,body {
     position: relative;
     height: 100%;
+    background: #000;
 }
 .wrap{
     margin: 0 auto;
@@ -80,7 +80,7 @@ html,body {
 .header{
     padding: 10px 6%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     border-bottom: 1px solid #d6ae99;
     box-shadow: 0px 7px 8px -8px #bebebe;
     position: fixed;
@@ -88,10 +88,10 @@ html,body {
     left: 0;
     right: 0;
     z-index: 999;
-    background: #fff;
+    background: rgb(0, 0, 0);
 }
 .header h1 a{
-    background-image: url(/github/Onepage/img/screen-0.jpg);
+    background-image: url(/github/Onepage/img/LOGO-630-225.png);
     background-repeat:no-repeat;
     display: block;
     width: 180px;
@@ -113,14 +113,51 @@ html,body {
     display: block;
     padding: 20px 20px;
     text-decoration: none;
-    color: #c18666;
+    color: #ffffff;
 }
 .menu li a:hover{
-    background: #c18666;
+    background: #777777;
     color: #fff;
 }
 
-
+.content{
+    margin-top: 90px;
+}
+.content img{
+    width: 100%;
+}
+.ag{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+    color: #ff0000;
+}
+.ag li{
+    width: 30%;
+    margin-bottom: 50px;
+}
+h3{
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.two{
+    width: 40%;
+    margin: 0 auto;
+}
+.footer{
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background: #5f5f5f;
+}
+h4{
+    color: white;
+    text-align: left;
+    line-height: 32px;
+    margin-bottom: 10px;
+}
 
 
 
@@ -332,6 +369,20 @@ html,body {
     }
 }
 @media (max-width:600px){
+    .ag{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 20px;
+        color: #ff0000;
+    }
+    .ag li{
+        width: 80%;
+        margin-bottom: 50px;
+    }
+
+
+
     .header{
         padding: 0;
         display: block;
@@ -350,7 +401,8 @@ html,body {
     }
     .header .phone{
         display: flex;
-        justify-content: space-between;
+        /*justify-content: space-between;*/
+        justify-content: center;
         align-items: center;
         position: fixed;
         top: 0;
@@ -360,7 +412,7 @@ html,body {
         background: #fff;
         z-index: 999;
         border-bottom: 1px solid #d6ae99;
-        background-color: #000b1d;
+        background-color: #000000;
     }
     .menu{
         display: block;
