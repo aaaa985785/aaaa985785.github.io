@@ -64,7 +64,7 @@ body {
     font-family: "Microsoft JhengHei", serif;
 }
 
-*{outline:black 1px solid;}
+/**{outline:black 1px solid;}*/
 
 html,body {
     position: relative;
@@ -74,6 +74,7 @@ html,body {
     margin: 0 auto;
     max-width: 80%;
     position: relative;
+    text-align:center;
 }
 
 .header{
