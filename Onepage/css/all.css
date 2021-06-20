@@ -50,6 +50,7 @@ table {
 img{
     max-width: 100%;
     height: auto;
+    
 }
 /*全域border box*/
 html {
@@ -63,9 +64,826 @@ body {
     font-family: "Microsoft JhengHei", serif;
 }
 
-*{border: 1px black solid;}
+*{outline:black 1px solid;}
 
+html,body {
+    position: relative;
+    height: 100%;
+}
 .wrap{
     margin: 0 auto;
     max-width: 80%;
+    position: relative;
+}
+
+.header{
+    padding: 10px 6%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #d6ae99;
+    box-shadow: 0px 7px 8px -8px #bebebe;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background: #fff;
+}
+.header h1 a{
+    background-image: url(/github/Onepage/img/screen-0.jpg);
+    background-repeat:no-repeat;
+    display: block;
+    width: 180px;
+    height: 72px;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+    background-size: contain;
+}
+.header .phone .smun{
+    display: none;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.menu li a{
+    display: block;
+    padding: 20px 20px;
+    text-decoration: none;
+    color: #c18666;
+}
+.menu li a:hover{
+    background: #c18666;
+    color: #fff;
+}
+
+
+
+
+
+@media (max-width:1263px){
+    .wrap{
+        max-width: 100%;
+    }
+}
+@media (max-width:1495px){
+    .content .sort{
+        width: 20%;
+    }
+    .commodity{
+        width: 80%;
+    }
+    .full a{
+        padding: 10px 50px;
+    }
+}
+@media (max-width:1480px){
+    .content_title .buy .now{
+        padding: 10px 20px;
+        margin-right: 10px;
+    }
+    .content_title .buy .go{
+        padding: 10px 20px;
+    }
+}
+@media (max-width:1385px){
+    .content_title .buy .now{
+        padding: 10px 20px;
+        margin-right: 10px;
+    }
+    .content_title .buy .go{
+        padding: 10px 20px;
+    }
+}
+@media (max-width:1066px){
+    .full a{
+        padding: 5px 30px;
+    }
+}
+@media (max-width:1024px){
+    /*goods.html*/
+    .content .sort{
+        width: 24%;
+    }
+    .commodity{
+        width: 76%;
+    }
+   
+    /*goods_content*/
+    .img_title{
+        width: 30%;
+    }
+    .content_title{
+        width: 30%;
+    }
+    .content_title h4{
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .content_title span{
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+    .content_title p {
+        font-size: 14px;
+    }
+    .content_title .color{
+        margin-bottom: 10px;
+    }
+    .content_title .price{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .content_title .price em{
+        font-size: 24px;
+        color: brown;
+        margin-left: 10px;
+    }
+    .content_title .buy{
+        margin-bottom: 30px;
+    }
+    .content_title .buy .now{
+        padding: 10px 20px;
+        margin-right: 5px;
+        font-size: 14px;
+    }
+    .content_title .buy .go{
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .full a{
+        padding: 5px 30px;
+        margin-right: 1px;
+        margin-left: 1px;
+        margin-top: 30px;
+    }
+}
+@media (max-width:970px){
+    .fouse .fb .facebook .left h3{
+        font-size: 18px;
+    }
+    .fouse .fb .facebook .left p{
+        font-size: 12px;
+    }
+    .fouse .fb .facebook .left span{
+        font-size: 10px;
+    }
+    .fouse .ig .instagram .left h3{
+        font-size: 18px;
+    }
+    .fouse .ig .instagram .left p{
+        font-size: 12px;
+    }
+    .fouse .ig .instagram .left span{
+        font-size: 10px;
+    }
+    .commodity .product li p{
+        font-size: 13px;
+    }
+    .img_title{
+        width: 40%;
+    }
+    .content_title{
+        width: 45%;
+    }
+}
+@media (max-width:790px){
+    .fouse .fb .facebook .left h3{
+        font-size: 16px;
+    }
+    .fouse .fb .facebook .left p{
+        font-size: 8px;
+    }
+    .fouse .fb .facebook .left span{
+        font-size: 8px;
+    }
+    .fouse .fb .facebook .right a{
+        font-size: 2px;
+    }
+    .fouse .ig .instagram .left h3{
+        font-size: 16px;
+    }
+    .fouse .ig .instagram .left p{
+        font-size: 8px;
+    }
+    .fouse .ig .instagram .left span{
+        font-size: 8px;
+    }
+    
+    /*goods.html*/
+    .content .sort{
+        width: 24%;
+    }
+    .commodity{
+        width: 76%;
+    }
+    
+    /*goods_content*/
+    .img_title{
+        width: 40%;
+    }
+    .content_title{
+        width: 45%;
+    }
+    .content_title h4{
+        font-size: 24px;
+    }
+    .content_title span{
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+    .content_title p {
+        font-size: 14px;
+    }
+    .content_title .color{
+        margin-bottom: 10px;
+    }
+    .content_title .price{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .content_title .buy{
+        margin-bottom: 30px;
+    }
+    .content_title .buy .now{
+        padding: 5px 10px;
+        margin-right: 5px;
+        font-size: 14px;
+    }
+    .content_title .buy .go{
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+    .full a{
+        padding: 5px 20px;
+        margin-right: 1px;
+        margin-left: 1px;
+        margin-top: 30px;
+    }
+    .good_img{
+        text-align: center;
+        margin-top: 30px;
+    }
+    .good_img img{
+        width: 80%;
+    }
+}
+@media (max-width:600px){
+    .header{
+        padding: 0;
+        display: block;
+        position: static;
+        border: none;
+        
+    }
+    .header h1 a{
+        width: 150px;
+        height: 50px;
+    }
+    .header .phone .smun{
+        display: block;
+        width: 7%;
+        
+    }
+    .header .phone{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 10px 4%;
+        background: #fff;
+        z-index: 999;
+        border-bottom: 1px solid #d6ae99;
+        background-color: #000b1d;
+    }
+    .menu{
+        display: block;
+        position: fixed;
+        top: 70px;
+        bottom: 0;
+        left: -198px;
+        background: rgb(255, 255, 255);
+        z-index: 999;
+        overflow: hidden;
+        transition: 0.5s ease;
+        
+    }
+    .menu.open{
+        left: 0;
+    }
+    .phonestyle.op{
+        background: #c18666;
+        position: absolute;
+        z-index: 998;
+        width: 100%;
+        height: 100%;
+        opacity:0.1;
+    }
+    .menu li a{
+        padding: 20px 120px 20px 20px;
+        font-size: 14px;
+        border-top: 1px solid #c18666;
+    }
+    .menu li .phonesize{
+        border-bottom: 1px solid #c18666;
+    }
+    .swiper-container {
+        margin-top: 70px;
+      }
+    .goods{
+        margin: -50px auto auto auto;
+        width: 90%;
+        padding: 10px;
+    }
+    .goods .new{
+        width: 10%;
+    }
+    .goods h2{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .goods .sort{
+        margin-bottom: 20px;
+    }
+    .goods .sort li a{
+        padding: 5px;
+        margin: 0 2px;
+        font-size: 12px;
+    }
+    .goods .goods-content{
+        justify-content: space-between;
+    }
+    .goods .goods-content li{
+        width: 32%;
+    }
+    .goods .goods-content img{
+        width: 97%;
+        margin-bottom: 10px;
+    }
+    .goods .goods-content span{
+        font-size: 10px;
+    }
+    .goods .goods-content a{
+        padding: 5px;
+        width: 60%;
+        font-size: 8px;
+    }
+    
+    .goods .goods-content .swiper-slide img{
+        width: 100%;
+    }
+    .fouse{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .fouse > li{
+        padding: 1px;
+        width: 100%;
+    }
+    .fouse .fb{
+        padding: 20px;
+        border-radius: 0;
+    }
+    .fouse .fb .facebook .left{
+        width: 80%;
+    }
+    .fouse .fb .facebook .left h3{
+        font-size: 16px;
+    }
+    .fouse .fb .facebook .left img{
+        width: 5%;
+    }
+    .fouse .fb .facebook .left p{
+        font-size: 10px;
+    }
+    .fouse .fb .facebook .left span{
+        font-size: 10px;
+    }
+    .fouse .fb .facebook .right{
+        text-align: left;
+    }
+    .fouse .fb .facebook .right img{
+        width: 35%;
+        margin-left: 25px;
+        margin-top: 10px;
+    }
+    .fouse .fb .facebook .right a{
+        width: 50%;
+        margin: 10px 0 0 15px;
+        padding: 2px;
+        font-size: 8px;
+        text-align: center;
+    }
+    .fouse .fb > p{
+        display: none;
+    }
+    .fouse .ig{
+        padding: 20px;
+        border-radius: 0;
+    }
+    .fouse .ig .instagram .left{
+        width: 80%;
+    }
+    .fouse .ig .instagram .left h3{
+        font-size: 16px;
+    }
+    .fouse .ig .instagram .left img{
+        width: 5%;
+    }
+    .fouse .ig .instagram .left p{
+        font-size: 10px;
+    }
+    .fouse .ig .instagram .left span{
+        font-size: 10px;
+    }
+    .fouse .ig .instagram .right{
+        text-align: left;
+    }
+    .fouse .ig .instagram .right img{
+        width: 35%;
+        margin-left: 25px;
+        margin-top: 10px;
+    }
+    .fouse .ig .instagram .right a{
+        width: 50%;
+        margin: 10px 0 0 15px;
+        padding: 2px;
+        font-size: 8px;
+        text-align: center;
+    }
+    .fouse .ig > p{
+        display: none;
+    }
+    .footer{
+        display: flex;
+        justify-content: space-around;
+        padding: 1%;
+    }
+    .footer .mspopo{
+        width: 100%;
+        text-align: center;
+    }
+    .footer .mspopo > img{
+        width: 30%;
+        margin-bottom: 1%;
+        margin-top: 2%;
+    }
+    .footer .mspopo p{
+        margin-left: 34%;
+        margin-bottom: 3%;
+        font-size: 10px;
+    }
+    .footer .mspopo span{
+        font-size: 10px;
+    }
+    .footer .mspopo p img{
+        width: 6%;
+        margin-right: 1%;
+    }
+    .footer .footermenu{
+        display: none;
+    }
+
+    /*goods.html*/
+    .content{
+        margin-top: 70px;
+        display: block;
+        flex-wrap: wrap;
+    }
+    .content .sort{
+        width: 100%;
+    }
+    .content .sort h2{
+        padding: 20px 20px 10px 20px;
+        font-size: 15px;
+    }
+    .content .sort ul{
+        display: flex;
+        justify-content: center;
+    }
+    .content .sort li a{
+        padding: 10px;
+        font-size: 12px;
+    }
+    .commodity{
+        width: 100%;
+    }
+    .commodity .sorttop{
+        font-size: 8px;
+    }
+    .commodity .sorttop ul{
+        margin-left: 0px;
+    }
+    .commodity .sorttop li a{
+        margin-left: 17px;
+    }
+    .commodity .product li{
+        width: 35%;
+        margin: 0 20px 40px 30px;
+    }
+    .commodity .product li h3{
+        font-size: 15px;
+    }
+    .commodity .product li p{
+        font-size: 12px;
+    }
+
+    /*goods_content*/
+    .goods_top_content{
+        display: block;
+        text-align: center;
+    }
+    .img_title{
+        width: 80%;
+        overflow: hidden;
+        margin: 10px auto;
+    }
+    .content_title{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .content_title h4{
+        font-size: 24px;
+    }
+    .content_title span{
+        display: block;
+        font-size: 12px;
+    }
+    .content_title p {
+        font-size: 12px;
+    }
+    .content_title .color{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+    .content_title .color a{
+        display: block;
+    }
+    .content_title .color .red{
+        width: 25px;
+        height: 25px;
+        
+    }
+    .content_title .color .blue{
+        width: 25px;
+        height: 25px;
+    }
+    .content_title .color .black{
+        width: 25px;
+        height: 25px;
+    }
+    .content_title .size{
+        display: flex;
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+    .content_title .size a{
+        padding: 3px 8px;
+        margin-right: 7px;
+        margin-left: 7px;
+    }
+    .content_title .price{
+        margin-bottom: 30px;
+    }
+    .content_title .buy{
+        display: flex;
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+    .content_title .buy .now{
+        padding: 5px 20px;
+        margin-right: 20px;
+    }
+    .content_title .buy .go{
+        padding: 5px 15px;
+    }
+    .full{
+        display: flex;
+        justify-content: center;
+    }
+    .full a{
+        padding: 5px 12px;
+        font-size: 12px;
+    }
+    hr{
+        width: 100%;
+    }
+    
+    /*about.html*/
+    .map{
+        width: 90%;
+        margin: 80px auto 0;
+    }
+    .about{
+        display: block;
+        width: 50%;
+        margin: 20px auto;
+        text-align: center;
+    }
+    .about h3{
+        font-size: 22px;
+        margin-bottom: 10px;
+        margin-top: 40px;
+    }
+    .about a{
+        padding: 10px 30px;
+        margin-bottom: 10px;
+    }
+    .about p{
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+
+    /*sign_in.html*/
+    .sign{
+        width: 90%;
+        height: 580px;
+        margin: 80px auto 130px;
+        border: none;
+        text-align: center;
+        padding: 50px;
+    }
+    .sign img{
+        width: 50%;
+        margin-top: 30px;
+    }
+    .sign input[type = "text"]{
+        -webkit-appearance: none;  /* Safari 和 Chrome，常用於iOS下移除內建樣式 */
+        -moz-appearance: none;     /* FireFox */
+        appearance: none;
+    }
+    .sign input[type = "password"]{
+        -webkit-appearance: none;  /* Safari 和 Chrome，常用於iOS下移除內建樣式 */
+        -moz-appearance: none;     /* FireFox */
+        appearance: none;
+    }
+    .sign input[type = "submit"]{
+        padding: 10px 50px; 
+        -webkit-appearance: none;  /* Safari 和 Chrome，常用於iOS下移除內建樣式 */
+        -moz-appearance: none;     /* FireFox */
+        appearance: none;
+    }
+    
+}
+@media (max-width:380px){
+    /*goods.html*/
+    .content{
+        margin-top: 70px;
+        display: block;
+        flex-wrap: wrap;
+    }
+    .content .sort{
+        width: 100%;
+        text-align: center;
+        border-right: 1px solid #7a7a77;
+    }
+    .content .sort h2{
+        font-size: 20px;
+        padding: 20px 20px 10px 20px;
+        border-bottom: 1px solid #7a7a77;
+        width: 68%;
+        margin: 0 auto;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .content .sort ul{
+        display: flex;
+        justify-content: center;
+    }
+    .content .sort li a{
+        padding: 10px;
+        display: block;
+        text-decoration: none;
+        color: #7a7a77;
+        font-weight: bold;
+        font-size: 12px;
+    }
+    .commodity{
+        width: 100%;
+    }
+    .commodity .sorttop{
+        display: flex;
+        margin: 20px 0 0 57px;
+        font-size: 8px;
+    }
+    .commodity .sorttop span{
+        color: #c18666;
+    }
+    .commodity .sorttop ul{
+        display: flex;
+        margin-left: 0px;
+    }
+    .commodity .sorttop li a{
+        color: #c18666;
+        margin-left: 8px;
+        text-decoration: none;
+    }
+    .commodity .product{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 30px;
+    }
+    .commodity .product li{
+        width: 35%;
+        margin: 0 20px 40px 25px;
+        text-align: center;
+    }
+    .commodity .product a{
+        text-decoration: none;
+    }
+    .commodity .product li h3{
+        margin-top: 10px;
+        color: #c18666;
+        font-size: 15px;
+    }
+    .commodity .product li p{
+        margin-top: 10px;
+        color: #5d5150;
+        font-size: 12px;
+    }
+
+    
+}
+@media (max-width:360px){
+    /*goods.html*/
+    .content{
+        margin-top: 70px;
+        display: block;
+        flex-wrap: wrap;
+    }
+    .content .sort{
+        width: 100%;
+        text-align: center;
+        border-right: 1px solid #7a7a77;
+    }
+    .content .sort h2{
+        font-size: 20px;
+        padding: 20px 20px 10px 20px;
+        border-bottom: 1px solid #7a7a77;
+        width: 68%;
+        margin: 0 auto;
+        font-weight: bold;
+        font-size: 15px;
+    }
+    .content .sort ul{
+        display: flex;
+        justify-content: center;
+    }
+    .content .sort li a{
+        padding: 10px;
+        display: block;
+        text-decoration: none;
+        color: #7a7a77;
+        font-weight: bold;
+        font-size: 12px;
+    }
+    .commodity{
+        width: 100%;
+    }
+    .commodity .sorttop{
+        display: flex;
+        margin: 20px 0 0 57px;
+        font-size: 8px;
+    }
+    .commodity .sorttop span{
+        color: #c18666;
+    }
+    .commodity .sorttop ul{
+        display: flex;
+        margin-left: 0px;
+    }
+    .commodity .sorttop li a{
+        color: #c18666;
+        margin-left: 0px;
+        text-decoration: none;
+    }
+    .commodity .product{
+        display: flex;
+        flex-wrap: wrap;
+        padding: 30px;
+    }
+    .commodity .product li{
+        width: 35%;
+        margin: 0 20px 40px 25px;
+        text-align: center;
+    }
+    .commodity .product a{
+        text-decoration: none;
+    }
+    .commodity .product li h3{
+        margin-top: 10px;
+        color: #c18666;
+        font-size: 15px;
+    }
+    .commodity .product li p{
+        margin-top: 10px;
+        color: #5d5150;
+        font-size: 12px;
+    }
 }
